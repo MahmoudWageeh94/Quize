@@ -16,8 +16,8 @@ nav{
     align-items: center;
     padding: 0 16px;
     .navbar-item{
-        padding-top: 16px;
         .navbar-link{
+            padding-top: 16px;
             display: flex;
             flex-flow: column wrap;
             justify-content: center;
@@ -37,18 +37,18 @@ nav{
             }
         }
         &.active{
-            position: relative;
-            &::after{
-                content: "";
-                width: 64px;
-                height: 3px;
-                background-color: #185ADB;
-                border-radius: 4px;
-                position: absolute;
-                left: -50%;
-                top: 0;
-            }
             .navbar-link{
+                position: relative;
+                &::after{
+                    content: "";
+                    width: 64px;
+                    height: 3px;
+                    background-color: #185ADB;
+                    border-radius: 4px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
                 i{
                     color: #185ADB;
                 }

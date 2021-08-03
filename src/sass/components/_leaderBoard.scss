@@ -4,8 +4,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
-    padding: 0 10px;
     h3{
         font-size: 3.2rem;
         color: $blackColor;
@@ -15,40 +13,53 @@
         text-align: left;
     }
     .leader-board_card{
-        height: 40px;
-        background-color: $grayColor;
-        margin-bottom: 15px;
+        height: 60px;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 2px 4px 60px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        margin-bottom: 12px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 300px;
-        border-radius: 3px;
-        padding: 0 10px;
-        border: solid 1px $grayColor;
+        padding: 0 16px;
         position: relative;
-        @media(min-width: 768px){
-           height: 60px;
-           width: 600px;
-           padding: 0 20px;
-        }
-        .person-image{
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            @media(min-width: 768px){
-                height: 40px;
+        .leaderBoard-card_info{
+            display: flex;
+            align-items: center;
+            .person-image{
                 width: 40px;
-           }
-        }
-        .person-name{
-            color: $blackColor;
-            font-size: 1.8rem;
-            font-weight: 500;
+                height: 40px;
+                border: 2px solid #FFFFFF;
+                box-sizing: border-box;
+                filter: drop-shadow(0px 6px 30px rgba(0, 0, 0, 0.15));
+                margin-right: 8px;
+                border-radius: 50%;
+            }
+            .person-name{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: #000000;
+                display: inline-block;
+                margin-right: 8px;
+            }
+            .rate-image{
+                width: 15px;
+                height: 20px;
+            }
         }
         .person-score{
-            color: $mainColor;
-            font-size: 1.8rem;
-            font-weight: 700;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 18px;
+            color: #185ADB;
+            .num{
+                padding-right: 4px;
+                font-weight: 600;
+            }
         }
     }
 }
