@@ -1,0 +1,18 @@
+.welcome{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    img{
+        width: 300px;
+        height: auto;
+    }
+}
+.main-title{
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: $blackColor;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}

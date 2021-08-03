@@ -1,0 +1,110 @@
+.task-share{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+ .form{
+      width: 492px;
+      background-color: $whiteColor;
+      z-index: 99999;
+      text-align: center;
+      padding: 32px;
+      @media (max-width: 767.98px){
+        padding: 24px 12px;
+        width: 95%;
+      }
+      .validation-icon{
+          display: block;
+          font-size: 5rem;
+          color: $mainColor;
+          margin-bottom: 30px;
+      }
+     form{
+        [class*='col-']{
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+        .form-control{
+            margin-bottom: 16px;
+            text-align: left;
+            .form-label{
+                display: block;
+                font-size: 12px;
+                font-weight: 400;
+                color:$lineColor;
+                margin-bottom: 8px;
+                text-transform: capitalize;
+            }
+            .form-input{
+                display: block;
+                width: 100%;
+                height: 40px;
+                border: 1px solid #c4c4c4;
+                padding-left: 5px;
+                @media (max-width: 767.98px){
+                  height: 30px;
+                }
+                &.error{
+                    border: 1px solid rgba($color: $mainColor, $alpha: 0.8);
+                    box-shadow: 1px 1px 2px 0 rgba($color: $mainColor, $alpha: 0.5);
+                }
+            }
+            textarea{
+                height: 150px;
+                display: block;
+                width: 100%;
+                border: 1px solid #c4c4c4;
+                padding-left: 5px;
+                resize: none;
+            }
+            .upload-img{
+                font-size: 1.8rem;
+                color: $blackColor;
+                font-weight: 500;
+                cursor: pointer;
+                text-transform: capitalize;
+                i{
+                    font-size: 2rem;
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .buttons{
+            text-align: right;
+            margin-top: 4px;
+            .form-submit{
+                font-size: 12px;
+                font-weight: 400;
+                color: $whiteColor;
+                height: 40px;
+                text-transform: uppercase;
+                background-color: $mainColor;
+                width: 100%;
+                border: none;
+                cursor: pointer;
+                display: block;
+                margin-bottom: 16px;
+                box-shadow: 0 0 0 0 inset $whiteColor;
+                border: 1px solid transparent;
+                transition: 0.3s ease all;
+                &:hover {
+                    box-shadow: 0 60px 0 0 inset $whiteColor;
+                    color: $mainColor;
+                    border-color: $mainColor;
+                }
+            }
+            .form-hint{
+                display: block;
+                text-align: center;
+                font-size: 1.2rem;
+                color: $lineColor;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+        }
+    }
+  }

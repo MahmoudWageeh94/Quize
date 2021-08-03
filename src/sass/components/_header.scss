@@ -1,0 +1,63 @@
+header{
+    .main-header{
+        height: 209px;
+        background: #185ADB;
+        border-radius: 0px 0px 20px 20px;
+        color: #fff;
+        padding-top: 64px;
+        position: relative;
+        .welcome-mainTitle{
+            height: 24px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .welcome-subTitle{
+            height: 24px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .tasks-points{
+            position: absolute;
+            width: calc(100% - 32px);
+            height: 131px;
+            left: 16px;
+            top: 144px;
+            background: #FFFFFF;
+            box-shadow: 2px 4px 60px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url("../img/background.svg");
+            background-size: cover;
+            span:first-of-type{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                color: #292929;
+                text-transform: capitalize;
+            }
+            span:nth-of-type(2){
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 38px;
+                color: #185ADB;;
+            }
+            span:last-of-type{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #292929;
+            }
+        }
+    }
+}

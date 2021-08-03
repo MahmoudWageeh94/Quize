@@ -1,0 +1,54 @@
+.leader-board{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 10px;
+    h3{
+        font-size: 3.2rem;
+        color: $blackColor;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        text-align: left;
+    }
+    .leader-board_card{
+        height: 40px;
+        background-color: $grayColor;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+        border-radius: 3px;
+        padding: 0 10px;
+        border: solid 1px $grayColor;
+        position: relative;
+        @media(min-width: 768px){
+           height: 60px;
+           width: 600px;
+           padding: 0 20px;
+        }
+        .person-image{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            @media(min-width: 768px){
+                height: 40px;
+                width: 40px;
+           }
+        }
+        .person-name{
+            color: $blackColor;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+        .person-score{
+            color: $mainColor;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+    }
+}

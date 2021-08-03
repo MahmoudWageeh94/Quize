@@ -1,0 +1,154 @@
+.back-btn{
+    display: inline-block;
+    margin-top: 22px;
+}
+.points{
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    right: 16px;
+    bottom: 120px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    span{
+        font-style: normal;
+        line-height: 18px;
+        color: #185ADB;
+        &:first-of-type{
+            font-weight: 600;
+            font-size: 20px;
+        }
+        &:last-of-type{
+            font-weight: 300;
+            font-size: 12px;
+        }
+    }
+}
+.question{
+    padding-top: 20px;
+    min-height: calc(100vh);
+    text-align: center;
+    .question-title{
+        margin-bottom: 24px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+    }
+    form{
+        .form-group{
+            .custom-control-input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+            .custom-control-label{
+                position: relative;
+                display: inline-block;
+                padding: 16px 0;
+                margin-bottom: 12px;
+                cursor: pointer;
+                width: 100%;
+                height: 48px;
+                text-align: center;
+                user-select: none;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+                color: #000;
+                background: #FFFFFF;
+                box-shadow: 2px 4px 60px rgba(0, 0, 0, 0.05);
+                border-radius: 5px;
+                margin-left: 0;
+            }
+            .custom-control-label::before {
+                display: none;
+            }
+            .custom-control-label::after {
+                display: none;
+            }
+        }
+        .button{
+            .submit-btn{
+                display: block;
+                width: calc(100% - 32px);
+                height: 48px;
+                background: $mainColor;
+                color: $whiteColor;
+                border-radius: 44px;
+                border: none;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                position: fixed;
+                left: 16px;
+                bottom: 24px;
+            }
+        }
+    }
+}
+form .form-group .custom-control-input:checked, form .form-group .custom-control-input:hover  ~ .custom-control-label {
+    color: $whiteColor;
+    background-color: $mainColor;
+    border: 1px solid #185ADB;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+.question .custom-control-input:focus, .first-section .custom-control-input:hover ~ .custom-control-label {
+    background-color: $mainColor;
+    color: $whiteColor;
+    border: 1px solid #185ADB;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+.spinner{
+    margin-top:10%;
+    margin-bottom: 100px;
+    width: 50px;
+    height: 50px;
+    border-width: 4px;
+    border-color: #ff8e1a $mainColor #3eff15 #709aff;
+    border-style: solid;
+    border-radius:50%;
+    animation: rotate 1.5s infinite ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+     .spinner-circle{
+        border-radius:50%;
+        width: 25px;
+        height: 25px;
+        background: $mainColor;
+        animation: spinner 3s infinite ease;
+     }
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(720deg)}
+}
+@keyframes spinner {
+    0%{
+        transform: scale(0);
+        background: #3eff15;
+
+    }
+    50%{
+        transform: scale(0.8);
+        background: #709aff;
+    }
+    100%{
+        transform: scale(1.2);
+        background: $mainColor;
+    }
+
+}
