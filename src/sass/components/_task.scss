@@ -17,6 +17,12 @@ header{
         margin-top: 26px;
     }
 }
+html[dir='rtl'] body{
+    .icon-arrow-left{
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+}
 .points{
     position: fixed;
     width: 64px;

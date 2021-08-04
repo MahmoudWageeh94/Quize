@@ -1,4 +1,7 @@
 jQuery(document).ready(function () {
+  $(".getdate").each(function() {
+      $(this).datepicker();
+  });
   // open side navBar
   let direction = document.getElementsByTagName("html")[0].getAttribute("dir");
   $("#openMenu").click(function () {

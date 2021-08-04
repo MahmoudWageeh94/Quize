@@ -100,16 +100,16 @@
         }
     }
 }
-// html[dir='rtl'] body{
-//   .tasks-list{
-//       .task-card{
-//           &.completed{
-//             &::after {
-//                 content: '';
-//                 border-width: 0 0 1px 1px;
-//                 transform: rotate(-45deg);
-//             }
-//         }
-//       }
-//   }
-// }
+html[dir='rtl'] body{
+  .tasks-list{
+      .task-card{
+          &.completed{
+            &::after {
+                content: '';
+                border-width: 0 0 1px 1px;
+                transform: rotate(-45deg);
+            }
+        }
+      }
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dandy Mall</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="nav">
+                        <!--Before login-->
+                        <!-- <div class="navbar-control logined">
+                                <a href="login.html" class="login-btn">Login</a>
+                                <a class="switch-lang" href="#">AR</a>
+                            </div> -->
+                        <!------------>
+                        <!--Aftre login-->
+                        <div class="navbar-control">
+                            <button id="openMenu"><i class="icon-bar"></i></button>
+                            <a class="switch-lang" href="#">AR</a>
+                        </div>
+                        <!------------>
+                        <a href="index.html"><img class="nav-logo" src="img/Dandy-logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="side-menu">
+                        <i class="icon-cancel" id="closeMenu"></i>
+                        <div class="img-container">
+                            <img class="profile-img" src="img/person.jpg" alt="profile image" />
+                        </div>
+                        <a href="profile.html">Profile</a>
+                        <a href="leaderBoard.html">Leader Board</a>
+                        <a href="login.html" class="login-btn">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="registration">
+            <div class="form">
+                <a href="index.html">
+                    <img class="logo-img" src="img/Dandy-logo.png" alt="dandy logo">
+                </a>
+                <h2 class="form-title">create new account</h2>
+                <form action="" id="signupForm">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-control">
+                                <label class="form-label" for="fName">first name</label>
+                                <input type="text" class="form-input" id="fName" name="first_name">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-control">
+                                <label class="form-label" for="lName">last name</label>
+                                <input type="text" class="form-input" id="lName" name="last_name">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-control">
+                                <label class="form-label" for="phone">phone number</label>
+                                <input type="tel" class="form-input" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-control">
+                                <label class="form-label" for="password">password</label>
+                                <input type="password" class="form-input" id="password" name="password">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-control">
+                                <label class="form-label" for="confirm_password">confirm password</label>
+                                <input type="password" class="form-input" id="confirm_password" name="confirm_password">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="buttons">
+                                <button type="submit" class="form-submit">register now</button>
+                                <button type="submit" class="form-submit fb-btn"><i class="icon-facebook"></i>sign up with facebook</button>
+                                <span class="form-hint">have an account? <a href="login.html" class="form-login">sign in
+                                        now</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="js/formsValidation.js"></script>
+    <script src="js/jquery.nicescroll.min.js" defer></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
