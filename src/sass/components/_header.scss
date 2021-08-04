@@ -3,7 +3,6 @@ header{
         height: 209px;
         background: #185ADB;
         border-radius: 0px 0px 20px 20px;
-        color: #fff;
         padding-top: 64px;
         position: relative;
         .welcome-mainTitle{
@@ -12,6 +11,8 @@ header{
             font-weight: 600;
             font-size: 20px;
             line-height: 24px;
+            color: #fff;
+            margin-top: 0;
         }
         .welcome-subTitle{
             height: 24px;
@@ -19,6 +20,7 @@ header{
             font-weight: 300;
             font-size: 20px;
             line-height: 24px;
+            color: #fff;
         }
         .tasks-points{
             position: absolute;

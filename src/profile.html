@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dandy Mall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Profile</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="profile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="profile-card">
+                                <div class="profile-image_container">
+                                    <img class="profile-image" src="img/person.jpg" alt="profile image" />
+                                    <form action="">
+                                        <label class="profile-image_change" for="edit_img"><i class="icon-edit"></i></label>
+                                        <input type="file" class="custom-control-input" id="edit_img" name="profile_img" />
+                                    </form>
+                                </div>
+                                <span>Welcome</span>
+                                <h3 class="profile-name">Ahmed Mohamed</h3>
+                                <div class="profile-card_points">
+                                    <span class="profile-score"><span class="num">3</span>Tasks</span>
+                                    <span class="profile-score"><span class="num">120</span>points</span>
+                                </div>
+                                <img class="rate-image" src="img/gold.svg" alt="rate image" />
+                        </div>
+                        <div class="profile-actions">
+                            <a class="profile-action_card" href="profileInfo.html">
+                                <span class="card-title">Profile Information</span>
+                                <i class="icon-arrow-left"></i>
+                            </a>
+                            <a class="profile-action_card" href="#">
+                                <span class="card-title">Language</span>
+                                <span class="lang">العربية</span>
+                                <i class="icon-arrow-left"></i>
+                            </a>
+                            <a class="profile-action_card" href="#">
+                                <span class="card-title">Logout</span>
+                                <i class="icon-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="navbar">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="index.html">
+                                <i class="icon-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="leaderBoard.html">
+                                <i class="icon-leader"></i>
+                                <span>Leader Board</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item active">
+                            <a class="navbar-link" href="profile.html">
+                                <i class="icon-profile"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="js/formsValidation.js"></script>
+    <script src="js/jquery.nicescroll.min.js" defer></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -22,6 +22,7 @@ nav{
             flex-flow: column wrap;
             justify-content: center;
             align-items: center;
+            width: 70px;
             i{
                 color: #000;
                 font-size: 16px;
@@ -41,7 +42,7 @@ nav{
                 position: relative;
                 &::after{
                     content: "";
-                    width: 64px;
+                    width: 70px;
                     height: 3px;
                     background-color: #185ADB;
                     border-radius: 4px;
