@@ -36,11 +36,13 @@
             color: $blackColor;
             font-size: 12px;
             font-weight: 500;
-            max-width: 90%;
-            overflow: wrap;
+            max-width: 85%;
             line-height: 18px;
             font-style: normal;
             margin-bottom: 16px;
+            height: 36px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         span{
             font-style: normal;
